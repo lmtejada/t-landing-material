@@ -22,25 +22,15 @@ class NavbarPage extends Component {
         <MDBContainer>
           <Logo  />
           <Link to="/" className="navbar-brand">
-            <strong className="ml-3 white-text">Creative Agency</strong></Link>
+            <strong className="ml-3 white-text">TISA</strong></Link>
           <MDBNavbarToggler name="navbar-toggler" onClick={this.toggleCollapse} />
           <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
             <MDBNavbarNav left>
-                <CustomNavLink to="#!">Home</CustomNavLink>
-                <CustomNavLink to="#!">About</CustomNavLink>
-                <CustomNavLink to="#!">Projects</CustomNavLink>
-                <MDBNavItem>
-                <MDBDropdown>
-                  <MDBDropdownToggle nav caret>
-                    <div className="d-none d-md-inline">About</div>
-                  </MDBDropdownToggle>
-                  <MDBDropdownMenu right>
-                    <MDBDropdownItem href="#!">Contact</MDBDropdownItem>
-                    <MDBDropdownItem href="#!">Articles</MDBDropdownItem>
-                    <MDBDropdownItem href="#!">Testimonials</MDBDropdownItem>
-                  </MDBDropdownMenu>
-                </MDBDropdown>
-              </MDBNavItem>
+                <CustomNavLink to="#!">Inicio</CustomNavLink>
+                <CustomNavLink to="#!">¿Quienes somos?</CustomNavLink>
+                <CustomNavLink to="#!">Productos</CustomNavLink>
+                <CustomNavLink to="#!">Servicios</CustomNavLink>
+                <CustomNavLink to="#!">Contacto</CustomNavLink>
             </MDBNavbarNav>
             <MDBNavbarNav right>
               <div className="d-flex align-items-center">
@@ -51,7 +41,7 @@ class NavbarPage extends Component {
                   <MDBIcon fab icon="twitter" className="ml-1" />
                 </CustomNavLink>
                 <CustomNavLink to="#!">
-                  <MDBIcon fab icon="linkedin" className="ml-1" />
+                  <MDBIcon fab icon="instagram" className="ml-1" />
                 </CustomNavLink>
               </div>
             </MDBNavbarNav>
